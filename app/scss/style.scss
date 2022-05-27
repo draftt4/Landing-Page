@@ -754,3 +754,157 @@ hr {
    }
 }
 
+.fantasy {
+   height: 900px;
+   margin-top: 300px;
+   background-image: url(../img/background-fantasy.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+      & .fantasy-container {
+         margin: 0 auto;
+         padding-top: 41px;
+         height: 900px;
+      & .text-links {
+         height: 800px;
+         width: 300px;
+      }
+      }
+}
+
+.text-links {
+   max-height: 700px;
+   & h1 {
+      font-family: 'Yeseva One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 27px;
+      line-height: 37px;
+      text-transform: uppercase;
+      color: $gold;
+      margin-top: 100px;
+   }
+   & .fantasy-list {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Nunito Sans';
+      font-weight: 400;
+      color: $white;
+      margin-top: 50px;
+      padding-left: 0px;
+   }
+   & .fantasy-items {
+      text-decoration: none;
+      font-size: 20px;
+      line-height: 38px;
+      list-style: none;
+      margin-bottom: 13px;
+   }
+   & a {
+      text-decoration: none;
+   }
+   & a:visited {
+      color: $white;
+   }
+   & a:hover {
+      color: $gold;
+      border-bottom: 2px $gold solid;
+   }
+}
+
+.fantasy-cards{
+   margin-top: -933px;
+   max-height: 1040px;
+   float:right;
+   max-width: 751px;
+   display: grid;
+   grid-template-columns: 354px 354px;
+   grid-template-rows: 1fr 1fr;
+   gap: 40px;
+   & .fantasy-1 {
+     width: 354px;
+     height: 557px;
+     margin-top: 73px;
+  }
+  & .fantasy-4 {
+     margin-top: -347px;
+     max-height: 600px;
+  }
+}
+
+.clients-container {
+   margin: 0 auto;
+   padding-top: 120px;
+   & h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Yeseva One';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+   }
+   .hands-logo {
+      margin: 0 auto;
+      background-image: url(../img/hands-logo.svg);
+      height: 28px;
+      width: 114px;
+      margin-top: 14px;
+   }
+   & p {
+      font-family: 'Nunito Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 29px;
+      text-align: center;
+      margin-top: 23px;     
+   }
+}
+
+.wrap-clients {
+   display: grid;
+   grid-template-columns: 376px 376px 376px ;
+   grid-template-rows: 1fr;
+   column-gap: 54px;
+   margin-top: 41px;
+   & .client-card1 {
+      padding-left: 28px;
+      & h4 {
+         display: flex;
+         align-items: center;
+         font-family: 'Yeseva One';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 23px;
+         & span {
+            display: block;
+            background-image: url(../img/client1.png);
+            width: 76px;
+            height: 76px;
+            margin-right: 22px;
+         }
+      }
+      & p {
+         font-family: 'Nunito Sans';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 13px;
+         line-height: 180%;
+         text-align: justify;
+         padding-right: 30px;
+      }
+   }
+}
+
+.box1 {
+   display: grid;
+   grid-template-columns: 145px 145px;
+   grid-template-rows: 54px;
+   margin-left: -19px;
+   margin-top: 62px;
+}
