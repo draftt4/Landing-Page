@@ -877,10 +877,10 @@ hr {
          display: flex;
          align-items: center;
          font-family: 'Yeseva One';
-         font-style: normal;
          font-weight: 400;
          font-size: 18px;
          line-height: 23px;
+         margin-bottom: 0;
          & span {
             display: block;
             background-image: url(../img/client1.png);
@@ -891,12 +891,12 @@ hr {
       }
       & p {
          font-family: 'Nunito Sans';
-         font-style: normal;
          font-weight: 400;
          font-size: 13px;
          line-height: 180%;
          text-align: justify;
          padding-right: 30px;
+         margin-top: 17px;
       }
    }
 }
@@ -906,5 +906,240 @@ hr {
    grid-template-columns: 145px 145px;
    grid-template-rows: 54px;
    margin-left: -19px;
-   margin-top: 62px;
+   margin-top: 70px;
+   font-family: 'Yeseva One';
+   font-weight: 400;
+   font-size: 17px;
+   line-height: 24px;
+   text-transform: uppercase;
+   color: $white;
+   background-color: $gold;
+   max-width: 293px;
+   & .item-1 {
+      display: flex;
+      align-items: center;
+      padding-left: 17px;
+      padding-top: 7px;
+      & span {
+         background-image: url(../img/client-item1.svg);
+         display: block;
+         width: 32px;
+         height: 32px;
+         margin-right: 15px;
+      }
+   }
+   & .item-2 {
+      display: flex;
+      align-items: center;
+      padding-left: 6px;
+      padding-top: 7px;
+      & span {
+         background-image: url(../img/client-item2.svg);
+         display: block;
+         width: 32px;
+         height: 32px;
+         margin-right: 15px;
+      }
+   }
 }
+
+.client-card2 {
+   & h4 {
+         display: flex;
+         align-items: center;
+         font-family: 'Yeseva One';
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 23px;
+         padding-left: 28px;
+         margin-bottom: 0;
+         & span {
+            display: block;
+            background-image: url(../img/client2.png);
+            background-position: center;
+            background-size: cover;
+            width: 93px;
+            height: 78px;
+            margin-right: 21px;
+         }
+   }
+   & p {
+      font-family: 'Nunito Sans';
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 180%;
+      text-align: justify;
+      padding-right: 30px;
+      padding-left: 28px;
+      margin-top: 17px;
+   }
+}
+
+.box2 {
+   display: grid;
+   grid-template-columns: 145px 145px;
+   grid-template-rows: 54px;
+   margin-left: 9px;
+   margin-top: 70px;
+   font-family: 'Yeseva One';
+   font-weight: 400;
+   font-size: 17px;
+   line-height: 24px;
+   text-transform: uppercase;
+   color: $white;
+   background-color: $gold;
+   max-width: 293px;
+      & .item-3 {
+         display: flex;
+         align-items: center;
+         padding-left: 17px;
+         padding-top: 7px;
+         & span {
+            background-image: url(../img/client-item1.svg);
+            display: block;
+            width: 32px;
+            height: 32px;
+            margin-right: 15px;
+         }
+      }
+      & .item-4 {
+         display: flex;
+         align-items: center;
+         padding-left: 6px;
+         padding-top: 7px;
+         & span {
+            background-image: url(../img/client-item2.svg);
+            display: block;
+            width: 32px;
+            height: 32px;
+            margin-right: 15px;
+         }
+      }
+   }
+
+
+   .client-card3 {
+      & h4 {
+            display: flex;
+            align-items: center;
+            font-family: 'Yeseva One';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            padding-left: 28px;
+            margin-bottom: 0;
+            & span {
+               display: block;
+               background-image: url(../img/client3.png);
+               background-position: center;
+               background-size: cover;
+               width: 79px;
+               height: 79px;
+               margin-right: 21px;
+            }
+      }
+      & p {
+         font-family: 'Nunito Sans';
+         font-weight: 400;
+         font-size: 13px;
+         line-height: 180%;
+         text-align: justify;
+         padding-right: 30px;
+         padding-left: 28px;
+         margin-top: 20px;
+      }
+   }
+   
+   .box3 {
+      display: grid;
+      grid-template-columns: 145px 145px;
+      grid-template-rows: 54px;
+      margin-left: 9px;
+      margin-top: 70px;
+      font-family: 'Yeseva One';
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: $white;
+      background-color: $gold;
+      max-width: 293px;
+         & .item-5 {
+            display: flex;
+            align-items: center;
+            padding-left: 17px;
+            padding-top: 7px;
+            & span {
+               background-image: url(../img/client-item1.svg);
+               display: block;
+               width: 32px;
+               height: 32px;
+               margin-right: 15px;
+            }
+         }
+         & .item-6 {
+            display: flex;
+            align-items: center;
+            padding-left: 6px;
+            padding-top: 7px;
+            & span {
+               background-image: url(../img/client-item2.svg);
+               display: block;
+               width: 32px;
+               height: 32px;
+               margin-right: 15px;
+            }
+         }
+      }
+
+      .help-questions {
+         height: 1000px;
+         background-image: url(../img/question-section.svg);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         margin-top: 500px;
+            & .help {
+               margin: 0 auto;
+            }
+      }
+
+      .last-form {
+         width: 885px;
+         height: 450px;
+         margin: 0 auto;
+         & h3 {
+            font-family: 'Yeseva One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $white;
+         }
+      }
+
+      .wrap-question-form {
+         width: 520px;
+         height: 140px;
+         margin: 0 auto;
+         display: flex;
+         & .name-input {
+            height: 45px;
+            width: 231px;
+            align-items: flex-start;
+         }
+         & .phone-input {
+            height: 45px;
+            width: 231px;
+            align-items: flex-start;
+         }
+         & .questio-input {
+            height: 45px;
+            width: 517px;
+            align-items:flex-end;
+         }
+
+
+      }
