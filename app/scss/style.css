@@ -882,6 +882,9 @@ hr {
   height: 43px;
   background-color: #131313;
   margin-bottom: 36px;
+  border: none;
+  border-bottom: 1px #959595 solid;
+  color: #FFFFFF;
 }
 
 .check-box-container-desire-form {
@@ -983,6 +986,7 @@ hr {
 
 .text-links a {
   text-decoration: none;
+  color: #E3B873;
 }
 
 .text-links a:visited {
@@ -1353,22 +1357,71 @@ hr {
 }
 
 .help-questions {
-  height: 1000px;
+  height: 970px;
   background-image: url(../img/question-section.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 500px;
+  margin-top: 344px;
+  color: #FFFFFF;
 }
 
 .help-questions .help {
   margin: 0 auto;
 }
 
+.help-questions .help .last-section-title {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #E3B873;
+  padding-top: 280px;
+}
+
+.help-questions .help .email-insta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 30px;
+  margin-left: 587px;
+}
+
+.help-questions .help .email-insta .email {
+  background-image: url(../img/email-logo.svg);
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.help-questions .help .email-insta .insta {
+  background-image: url(../img/insta-logo.svg);
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin-left: 15px;
+}
+
+.help-questions .help .map {
+  background-image: url(../img/map.png);
+  display: block;
+  width: 954px;
+  height: 474px;
+  margin-top: 34px;
+  margin-left: 131px;
+}
+
 .last-form {
   width: 885px;
   height: 450px;
-  margin: 0 auto;
+  position: absolute;
+  margin-top: -216px;
+  background-color: #131313;
+  margin-left: 194px;
 }
 
 .last-form h3 {
@@ -1380,38 +1433,114 @@ hr {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin-left: -1px;
+  margin-top: 32px;
+}
+
+.last-form button {
+  margin-top: 49px;
+  margin-left: 341px;
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #E3B873;
+  height: 53px;
+  width: 200px;
 }
 
 .wrap-question-form {
-  width: 520px;
+  display: -ms-grid;
+  display: grid;
   height: 140px;
+  width: 520px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  color: #FFFFFF;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
 }
 
-.wrap-question-form .name-input {
-  height: 45px;
+.wrap-question-form .question-form-name {
+  margin-top: 24px;
+  height: 50px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.wrap-question-form .question-form-name span {
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #959595;
+}
+
+.wrap-question-form .question-form-name input {
   width: 231px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  height: 36px;
+  color: #FFFFFF;
+  background-color: #131313;
+  border: none;
+  border-bottom: 1px #959595 solid;
 }
 
-.wrap-question-form .phone-input {
-  height: 45px;
+.wrap-question-form .question-form-phone {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  margin-left: 56px;
+  margin-top: 24px;
+}
+
+.wrap-question-form .question-form-phone span {
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #959595;
+}
+
+.wrap-question-form .question-form-phone input {
   width: 231px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  height: 36px;
+  color: #FFFFFF;
+  background-color: #131313;
+  border: none;
+  border-bottom: 1px #959595 solid;
 }
 
-.wrap-question-form .questio-input {
+.wrap-question-form .question-form-question {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  margin-top: 27px;
+}
+
+.wrap-question-form .question-form-question span {
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #959595;
+}
+
+.wrap-question-form .question-form-question input {
+  width: 516px;
   height: 45px;
-  width: 517px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  color: #FFFFFF;
+  background-color: #131313;
+  border: none;
+  border-bottom: 1px #959595 solid;
+}
+
+.last-form-checkbox {
+  margin-top: 71px;
+  margin-left: 296px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -719,6 +719,9 @@ hr {
       height: 43px;
       background-color: $black;
       margin-bottom: 36px;
+      border: none;
+      border-bottom: 1px $gray solid;
+      color: $white;
    }
 }
 
@@ -802,6 +805,7 @@ hr {
    }
    & a {
       text-decoration: none;
+      color: $gold;
    }
    & a:visited {
       color: $white;
@@ -1093,21 +1097,63 @@ hr {
       }
 
       .help-questions {
-         height: 1000px;
+         height: 970px;
          background-image: url(../img/question-section.svg);
          background-position: center;
          background-repeat: no-repeat;
          background-size: cover;
-         margin-top: 500px;
+         margin-top: 344px;
+         color: $white;
             & .help {
                margin: 0 auto;
+               & .last-section-title {
+                  font-family: 'Yeseva One';
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 20px;
+                  line-height: 28px;
+                  text-align: center;
+                  text-transform: uppercase;
+                  color: $gold;
+                  padding-top: 280px;
+               }
+               & .email-insta {
+                  display: flex;
+                  width: 100px;
+                  height: 30px;
+                  margin-left: 587px;
+                  & .email {
+                     background-image: url(../img/email-logo.svg);
+                     display: block;
+                     width: 28px;
+                     height: 28px;
+                  }
+                  & .insta {
+                     background-image: url(../img/insta-logo.svg);
+                     display: block;
+                     width: 28px;
+                     height: 28px;
+                     margin-left: 15px;
+                  }
+               }
+               & .map {
+                  background-image: url(../img/map.png);
+                  display: block;
+                  width: 954px;
+                  height: 474px;
+                  margin-top: 34px;
+                  margin-left: 131px;
+               }
             }
       }
 
       .last-form {
          width: 885px;
          height: 450px;
-         margin: 0 auto;
+         position: absolute;
+         margin-top: -216px;
+         background-color: $black;
+         margin-left: 194px;
          & h3 {
             font-family: 'Yeseva One';
             font-style: normal;
@@ -1117,29 +1163,96 @@ hr {
             text-align: center;
             text-transform: uppercase;
             color: $white;
+            margin-left: -1px;
+            margin-top: 32px;
+         }
+         & button {
+            margin-top: 49px;
+            margin-left: 341px;
+            font-family: 'Nunito Sans';
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 27px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $white;
+            background-color: $gold;
+            height: 53px;
+            width: 200px;
          }
       }
 
       .wrap-question-form {
-         width: 520px;
+         display: grid;
          height: 140px;
+         width: 520px;
          margin: 0 auto;
-         display: flex;
-         & .name-input {
-            height: 45px;
-            width: 231px;
-            align-items: flex-start;
+         color: $white;
+         grid-template-columns: repeat(4 , 1fr);
+         grid-template-rows: repeat(2 , auto);
+         & .question-form-name {
+            margin-top: 24px;
+            height: 50px;
+            grid-column: 1 / 2;
+            & span {
+               font-family: 'Nunito Sans';
+               font-weight: 400;
+               font-size: 13px;
+               line-height: 21px;
+               color: $gray;
+            } 
+            & input {
+               width: 231px;
+               height: 36px;
+               color: $white;
+               background-color: $black;
+               border: none;
+               border-bottom: 1px $gray solid;
+            }
          }
-         & .phone-input {
-            height: 45px;
-            width: 231px;
-            align-items: flex-start;
+         & .question-form-phone {
+            grid-column: 3 / 4;
+            margin-left: 56px;
+            margin-top: 24px;
+            & span {
+               font-family: 'Nunito Sans';
+               font-weight: 400;
+               font-size: 13px;
+               line-height: 21px;
+               color: $gray;
+            } 
+            & input {
+               width: 231px;
+               height: 36px;
+               color: $white;
+               background-color: $black;
+               border: none;
+               border-bottom: 1px $gray solid;
+            }
          }
-         & .questio-input {
-            height: 45px;
-            width: 517px;
-            align-items:flex-end;
+         & .question-form-question {
+            grid-column: 1 / 5;
+            margin-top: 27px;
+            & span {
+               font-family: 'Nunito Sans';
+               font-weight: 400;
+               font-size: 13px;
+               line-height: 21px;
+               color: $gray;
+            } 
+            & input {
+               width: 516px;
+               height: 45px;
+               color: $white;
+               background-color: $black;
+               border: none;
+               border-bottom: 1px $gray solid;
+            }
          }
-
-
       }
+
+      .last-form-checkbox {
+         margin-top: 71px;
+         margin-left: 296px;
+      }
+
