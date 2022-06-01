@@ -1683,6 +1683,11 @@ footer .nav_list_items a:hover {
 }
 
 @media (min-width: 375px) and (max-width: 1300px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 40px;
+  }
   .nav_menu {
     display: none;
   }
@@ -1692,7 +1697,7 @@ footer .nav_list_items a:hover {
   .logo {
     margin: 0 auto;
     margin-right: 56px;
-    margin-left: 182px;
+    margin-left: 45px;
   }
   span {
     margin: 0 auto;
@@ -1716,6 +1721,8 @@ footer .nav_list_items a:hover {
   }
   .cost-project {
     height: 1500px;
+    background-color: #131313;
+    width: 100%;
   }
   .menu-items {
     display: none;
@@ -1736,12 +1743,14 @@ footer .nav_list_items a:hover {
   }
   .main_content .image-container {
     width: 100%;
+    width: auto;
+    max-width: 400px;
+    max-height: 300px;
     margin-top: 44px;
-    max-width: 300px;
-    height: 300px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-size: auto;
   }
   .main_content .text_content {
     height: 150px;
@@ -1766,6 +1775,75 @@ footer .nav_list_items a:hover {
   }
   .arrows {
     display: none;
+  }
+  .online-control {
+    margin-top: -21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .online-control h3 {
+    width: 100%;
+  }
+  .online-control .camera-image {
+    width: 100%;
+  }
+  .online-control .video-image {
+    max-width: 500px;
+    max-height: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .online-control p {
+    width: 100%;
+  }
+  .online-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-top: 170px;
+    padding-right: 40px;
+  }
+  .online-form .wraper-online-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .online-form .wraper-online-form .name-online {
+    width: 100%;
+  }
+  .online-form .wraper-online-form .name-online input {
+    width: 100%;
+  }
+  .online-form .wraper-online-form .phone-online {
+    width: 100%;
+  }
+  .online-form .wraper-online-form .phone-online input {
+    width: 100%;
+  }
+  .online-form .wraper-online-form button {
+    width: 100%;
+    margin-top: 61px;
+  }
+  .online-form .check-container {
+    width: 100%;
+    margin-top: 96px;
+    margin-left: 69px;
   }
 }
 /*# sourceMappingURL=style.css.map */
