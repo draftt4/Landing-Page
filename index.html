@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="sylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./app/scss/style.css">
     <title>IC Desing Project</title>
 </head>
@@ -89,21 +90,20 @@
                 <p>At each facility, a camera is installed that broadcasts the progress of work on the <br>clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
                     <br>Leave a request below and you will receive a link to the broadcast.</p>
             <form class="online-form" action="#">
-                <label class="name-label" for="name">
+            <div class="wraper-online-form">
+                <div class="name-online">
                     <span>Name</span>
-                    <input class="name-imput" type="imput" placeholder="What is your name">
-                </label>
-                <label class="phone-label" for="phone">
+                    <input class="name-input" type="input" placeholder="What is your name">
+                </div>
+                <div class="phone-online">
                     <span>Phone</span>
-                    <input class="phone-imput" type="imput" placeholder="Your phone number">
-                </label>
+                    <input class="phone-input" type="input" placeholder="Your phone number">
+                </div>
                 <button>submit</button>
+            </div>
                 <div class="check-container">
-                <label class="label" for="checkbox-label">
-                    <input class="checkbox" type="checkbox">
-                    <span class="fake"></span>
-                    <span class="text">I agree to the processing of personal data</span>
-                </label>
+                    <input class="checkbox-online" type="checkbox">
+                    <label class="label" for="checkbox-label">I agree to the processing of personal data</label>
             </div>
             </form>
             </div>
@@ -261,31 +261,31 @@
                 </div>
             </div>
             </div>
-        </section>
-        <section class="help-questions">
-            <div class="container help">
-                <form class="last-form">
+            <form class="last-form">
                 <h3>have any questions?</h3>
-                <div class="wrap-question-form">
-                    <div class="question-form-name">
-                        <span>Name</span>
-                        <input class="name-input" type="input" placeholder="What is your name:">
+                    <div class="wrap-question-form">
+                        <div class="question-form-name">
+                            <span>Name</span>
+                            <input class="name-input" type="input" placeholder="What is your name:">
+                        </div>
+                        <div class="question-form-phone">
+                            <span>Phone</span>
+                            <input class="phone-input" type="input" placeholder="Your phone number:">
+                         </div>
+                        <div class="question-form-question">
+                            <span>Question</span>
+                            <input class="questio-input" type="input" placeholder="I want to know:">
+                        </div>
                     </div>
-                    <div class="question-form-phone">
-                        <span>Phone</span>
-                        <input class="phone-input" type="input" placeholder="Your phone number:">
-                    </div>
-                    <div class="question-form-question">
-                        <span>Question</span>
-                        <input class="questio-input" type="input" placeholder="I want to know:">
-                    </div>
-                </div>
                 <div class="last-form-checkbox">
                     <input type="checkbox" class="last">
                     <label for="ckeckbox">I agree to the processing of personal data</label>
                 </div>
                 <button>submit</button>
-                </form>
+            </form>
+        </section>
+        <section class="help-questions">
+            <div class="container help">
                 <h3 class="last-section-title">Rostov-on-Don, Nansen St., 239 Shopping Center
                     <br>Decorum Tel +7 (928) 768 32 29</h3>
                     <div class="email-insta">
@@ -297,7 +297,21 @@
         </section>
     </main>
     <footer>
-        
+        <div class="container footer-content">
+            <div class="logo">IC "Repair Design Project"</div>
+                <div class="nav_menu">
+                    <ul class="nav_list_items">
+                        <li class="nav_items"><a href="#">home</a></li>
+                        <li class="nav_items"><a href="#">projects</a></li>
+                        <li class="nav_items"><a href="#">measurement</a></li>
+                        <li class="nav_items"><a href="#">team</a></li>
+                        <li class="nav_items"><a href="#">reviews</a></li>
+                        <li class="nav_items"><a href="#">contacts</a></li>
+                    </ul>
+                </div>
+                <span>+7 (928) 768-32-39</span>
+                <button>request a call</button>
+        </div>
     </footer>
     <script src="/app/js/script.js"></script>
 </body>
